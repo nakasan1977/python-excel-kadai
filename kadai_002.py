@@ -9,11 +9,14 @@ df = pd.DataFrame({"“ú•t":["2023-05-17","2023-05-18","2023-05-19",\
 df["•½‹Ï”„ã"] = df["”„ã"].mean()
 print(df["•½‹Ï”„ã"])
 
+average_sales = df['”„ã'].mean()
+above_averege = average_sales + 50
+
 def performance(level):
   achievement = "";
-  if level >= 200+ 50:
+  if level >= above_averege:
     achievement = "A";
-  elif level >= 200:
+  elif level >= average_sales:
     achievement = "B";
   else:
     achievement ="C" ;
