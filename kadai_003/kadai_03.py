@@ -29,7 +29,7 @@ for row in dataframe_to_rows(combined_df, index=False, header=True):
 
 # ヘッダー部分のセルにグレーの塗りつぶしを適用
 header_fill = PatternFill(start_color="F2F2F2", end_color="F2F2F2", fill_type="solid")
-for cell in wb["1:1"]:
+for cell in ws["1:1"]:
     cell.fill = header_fill
 
 # Excelファイルを保存
